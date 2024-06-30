@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: url(images/bg.jpeg);
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.card {
+	background-color: rgba(153, 88, 238, 0.6);
+	position: relative;
+	width: 380px;
+	height: 500px;
+	border-radius: 20px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.search {
+	padding: 0 30px;
+	position: relative;
+	top: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.search input {
+	width: 75%;
+	height: 50px;
+	border: none;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #000;
+}
+
+.search button {
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.weather {
+	position: relative;
+	top: 50px;
+}
+
+.weather h1 {
+	font-size: 40px;
+	font-weight: 500;
+	color: #fff;
+	position: relative;
+	top: -19px;
+}
+
+.weather h2 {
+	font-size: 40px;
+	font-weight: 500;
+	color: #fff;
+	position: relative;
+	top: -19px;
+}
+
+.weather img {
+	width: 130px;
+	margin: 20px 0;
+}
+
+.weather .details {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 30px;
+	padding: 0 34px;
+}
+
+.weather .details img {
+	width: 40px;
+	height: 40px;
+}
+
+.weather .details .var {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.weather .details .var div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.weather .details .var p {
+	margin-left: 10px;
+	color: #fff;
+	font-size: 14px;
+	width: 100px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.weather .details .var .humidity,
+.weather .details .var .wind {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 500;
+	padding-bottom: 0;
+}

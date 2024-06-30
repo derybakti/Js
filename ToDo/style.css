@@ -1,0 +1,124 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+body {
+	background: url(images/bg.jpeg) no-repeat;
+	background-size: cover;
+}
+
+.todo {
+	margin: 100px auto 10px;
+	width: 400px;
+	padding: 40px;
+	background: rgba(156, 53, 240, 0.6);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+}
+
+.title {
+	display: flex;
+	justify-self: center;
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+}
+
+.title h2 {
+	margin-right: 10px;
+}
+
+.input {
+	position: relative;
+}
+
+.input input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+
+.input input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.input button {
+	width: 100%;
+	padding: 10px 30px;
+	font-size: 16px;
+	color: #fff;
+	background: rgba(55, 17, 87, 0.8);
+	border: none;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.input button:hover {
+	background: rgba(55, 17, 87, 1);
+}
+
+.todo-list {
+	position: relative;
+	color: #fff;
+	width: 100%;
+	margin: 30px auto;
+	padding: 0 30px 0 0;
+	list-style: none;
+}
+
+.todo-list li {
+	list-style: none;
+	padding: 13px 8px 12px 50px;
+	position: relative;
+	cursor: pointer;
+}
+
+.todo-list li::before {
+	content: "";
+	position: absolute;
+	height: 28px;
+	width: 28px;
+	background-image: url(images/unchecked.png);
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+	top: 12px;
+	left: 8px;
+}
+
+.todo-list li.checked {
+	color: #cabebe;
+	text-decoration: line-through;
+}
+
+.todo-list li.checked::before {
+	background-image: url(images/checked.png);
+}
+
+.todo-list li span {
+	position: absolute;
+	right: -40px;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	font-size: 22px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+}
+
+.todo-list li span:hover {
+	background: #cabebe;
+}
